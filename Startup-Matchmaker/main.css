@@ -1,0 +1,276 @@
+
+
+/*top header bar with the logo */
+header {
+  background-color: black;
+  font-family: 'Merriweather', serif;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+/*Navigation bar first two with diff font*/
+.find_developers, .find_designers {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*startup matchmaker logo*/
+h1.logo {
+  padding-left: 20px;
+  padding-top: 15px;
+  color: #ffff00;
+  font-size: 30px;
+  margin: 0;
+}
+
+/*flexbox navigation bar*/
+.navigation_bar {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: white;
+}
+
+/*edits to remove bullets and add spacing to navigation items*/
+.nav {
+  list-style: none;
+  font-size: 23px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*removes the standard html link styling from the nav items*/
+a {
+    color: white;
+    text-decoration: none;
+}
+.nav:hover {
+  color: yellow;
+}
+
+/*adds in the strikethrough*/
+del {
+  color: grey;
+}
+
+/*underlines word in weird quote that makes no sense*/
+u{
+  text-decoration-color: yellow;
+}
+
+/*styling of thin yellow line across the page*/
+hr {
+  border-style: none;
+  height: 3px;
+  background-color: #ffff00;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* italic weird quote that might be cannibalism but idk*/
+.quote {
+  background-color: #D3D3D3;
+  display: flex;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: bold;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/*parent container for picture section*/
+.match {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url(coworking.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 520px;
+  margin: 0;
+  width: 100%;
+}
+
+/*right box in the picture section*/
+.match_box {
+  background-color: rgba(255,255,255, 0.8);
+  box-shadow: 0 0 3px #333;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: 'Karla', sans-serif;
+  height: 400px;
+  line-height: 30px;
+  margin-right: 5%;
+  padding: 20px 25px;
+  text-align: left;
+  width: 300px;
+}
+
+
+/*bottom 3 buttons for the create, designer, and developer sections*/
+h1 {
+  font-size: 30px;
+  margin: 15px 10px;
+}
+
+/*text inside that right picture box with yellow button*/
+.profile_description {
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+/*yellow button*/
+.yellow_profile {
+  background-color: #ffff00;
+  border-color: #ffff00;
+  box-shadow: 0 3px 2px rgba(128,128,0,1);
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px 40px;
+  width: 300px;
+}
+
+/*bottom area parent with the three different button sections*/
+.search_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/*Create a Profile section with button  */
+.create {
+  border-right: 1px solid gray;
+  padding-right: 100px;
+  margin: 20px 5%;
+  text-align: justify;
+}
+
+/*Find a Developer section with button*/
+.developer {
+  text-align: justify;
+  margin: 20px 2.5%;
+
+}
+
+/*Find a Designer section with button*/
+.designer {
+  margin: 20px 5%;
+  border-left: 1px solid gray;
+  padding-left: 100px;
+  text-align: justify;
+}
+
+/*grey button that shows up 3 times*/
+.grey_button {
+  background-color: #D3D3D3;
+  border-color: #D3D3D3;
+  box-shadow: 0 3px 2px rgb(105,105,105);
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px 40px;
+  width: 300px;
+}
+
+/*Button hover color*/
+.yellow_profile:hover, .grey_button:hover {
+  background-color: #df5454;
+  border-color: #df5454;
+  box-shadow: 0 3px 2px rgb(105,105,105);
+  cursor: pointer;
+}
+
+
+/*Black copyright footer*/
+.copy {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+/*Headings for Search Area stuff*/
+.create_1, .create_2, .create_3 {
+    font-family: 'Merriweather', serif;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 600px) {
+
+/*make logo centered*/
+  h1.logo {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+/*make navigation bar container center*/
+  ul {
+    padding: 0;
+  }
+
+/*change nav bar to a column*/
+  .navigation_bar {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    line-height: 50px;
+    margin: 0;
+  }
+
+/*make header background-color: black fit the nav bar column*/
+  header {
+    height: 320px;
+  }
+
+/*center the weird quote*/
+  .quote {
+    text-align: center;
+  }
+
+/*center the yellow button box with text*/
+.match {
+  align-items: center;
+}
+
+/*turn three grey button section into a column*/
+.search_area {
+  margin: 20px;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/*adjust individual grey button sections to fix alignment and spacing*/
+.create, .developer, .designer{
+  border: none;
+  padding: 20px;
+  margin: 0;
+}
+
+
+}
