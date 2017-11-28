@@ -1,0 +1,231 @@
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url(header_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  width: 100%
+}
+
+.logo, .logo_info {
+  color: white;
+}
+
+
+.logo_info {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.relaxr_logo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  margin-top: 0;
+  padding-left: 50px;
+  padding-top: 20px;
+  text-transform: capitalize;
+
+}
+
+.piece {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+.get_it_now {
+  background-color: #f9e42e;
+  border-color: #f9e42e;
+  color: #033048;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  height: 40px;
+  margin: 0;
+  width: 160px;
+}
+
+.benefits_section {
+  background-color: white;
+  color: #033048;
+  display: inline-block;
+  height: 300px;
+  margin: 0;
+  padding-left: 200px;
+  padding-bottom: 70px;
+  padding-top: 40px;
+
+}
+
+
+.benefits_box {
+  float: left;
+  margin: 0;
+  width: 50%;
+
+}
+
+.benefits_text {
+  color: gray;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+ul {
+  color: gray;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 0;
+  width: 70%
+}
+
+.second_button {
+  display: inline-block;
+  height: 40px;
+  margin: 0;
+  padding-left: 25%;
+  padding-top: 15%;
+  width: 10%;
+}
+
+.clearfix:after {
+ clear: both;
+ content: " ";
+ display: block;
+ }
+
+.testimonials {
+  background-color: #f9e42e;
+  height: 330px;
+  margin: 0;
+  padding-top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.box_one, .box_two, .box_three {
+  background-color: #3186db;
+  height: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.box_section_one, .box_section_two, .box_section_three {
+  display: inline-block;
+  margin: 0;
+  padding: 100px;
+  text-align: center;
+  width: 100px;
+}
+
+.amanda_section {
+  background-image: url(testimonial_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 200px;
+  padding-bottom: 10px;
+
+}
+
+.quote {
+  display: inline-block;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0;
+  padding-left: 40%;
+  padding-right: 40%;
+  padding-top: 4%;
+  text-align: center;
+  width: 20%;
+}
+
+h4 {
+  margin: 0;
+  padding: 1%;
+  text-align: center;
+}
+
+
+.last_button_section {
+    background-color: #f9e42e;
+    height: 100px;
+
+}
+
+
+.final_button {
+  background-color: #f9e42e;
+  text-align: center;
+}
+
+.sign_up_now {
+  background-color: #033048;
+  border-color: #033048;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  height: 40px;
+  margin: 30px;
+  width: 160px;
+}
+
+.contact_info {
+  background-color: #121212;
+  color: white;
+  height: 300px;
+  text-align: center;
+}
+
+.relaxr_logo_yellow {
+  color: #f9e42e;
+  font-size: 25px;
+  margin-top: 0;
+  padding: 50px;
+  text-transform: capitalize;
+}
+
+.social_media_buttons {
+  margin: 0;
+  text-align: center;
+}
+
+.twitter {
+    display: inline;
+    height: 20px;
+    padding-right: 1%;
+    width: 20px;
+}
+
+.fb {
+  display: inline-block;
+  height: 20px;
+  margin-top: 0;
+  padding-left: 1%;
+  width: 20px;
+}
+
+img {
+  height: 20px;
+}
+
+.copyright {
+  font-size: 10px;
+  padding-top: 30px;
+}
