@@ -30,7 +30,6 @@ ul {
 
 nav ul.opening {
   display: block;
-  padding-top: 2.5em;
 }
 
 
@@ -38,9 +37,8 @@ nav ul.opening {
 nav a {
     display: block;
     font-size: 20px;
-    padding: 2% 0;
+    color: #f9e42e;
     text-decoration: none;
-    /*line-height: 40px;*/
 }
 
 nav a:hover {
@@ -104,7 +102,9 @@ nav a:hover {
 
 
 /*mobile first media query to change desktop settings*/
+/*---desktop breakpoint is 780px----*/
 @media (min-width: 780px) {
+
 .menu-toggle {
   display: none;
 }
@@ -119,12 +119,6 @@ nav li {
     padding: 10px 1.3em;
 }
 
-nav li a {
-  /*padding: 1.5em 1.3em;*/
-  margin: 0;
-  border: none;
-}
-
 
 nav {
   display: flex;
@@ -133,13 +127,27 @@ nav {
   text-align: center;
   background-color: #033048;
 }
-
 }
-/*-------------------------------------------*/
 
-.site-nav a {
-  color: #f9e42e;
-  text-decoration: none;
+/*-------------------------------------------*/
+@media (max-width: 780px) {
+
+  nav a {
+    font-size: 30px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #033048;
+  }
+
+  nav li{
+      line-height: 60px;
+  }
+
 }
 
 
@@ -162,6 +170,16 @@ article {
 .blog-title {
   font-size: 2.5em;
   color: #033048;
+}
+
+.firstcharacter {
+  float: left;
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }
 
 /*column 1 is the main content column with blog posts*/
@@ -209,6 +227,10 @@ article {
     color: #033048;
 }
 
+.column2-list a:hover {
+   color: #f9e42e;
+}
+
 /*headers in column 2*/
 .column2 h3 {
   color: #033048;
@@ -226,7 +248,10 @@ article {
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 0;
+}
 
+#learning a:hover{
+  color: #f9e42e;
 }
 
 /*blog listing read more arrow link*/
@@ -238,6 +263,10 @@ article {
 .next-tag a {
   color: #033048;
   text-decoration: none;
+}
+
+.next-tag a:hover {
+  color: 	#f9e42e;
 }
 
 
@@ -264,6 +293,12 @@ article {
   height: 40px;
   margin: 30px;
   width: 160px;
+}
+
+.sign_up_now:hover {
+  background-color: #9aacb5;
+  border-color: #9aacb5;
+  color: #033048;
 }
 
 
@@ -305,6 +340,7 @@ article {
 .twitter img, .fb img {
   height: 30px;
 }
+
 
 .copyright {
   font-family: 'Open Sans', sans-serif;
